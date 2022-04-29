@@ -4,13 +4,10 @@ input {
   font-size: 20px;
 }
 
-/*  Wszystkie elementy form gdzie form jest naszą klasą w pliku
-AddTaask*/
 .form {
   font-size: 20px;
 }
 
-/* Musimy odwołać się do przycisku w klasie */
 .form button {
   padding: 3px 10px;
   text-transform: uppercase;
@@ -56,5 +53,6 @@ AddTaask*/
 .dropdown {
   border-style: ridge;
 }
-
-/* Stworzyć dymki */
+.abc {
+  margin-left: 100px;
+}

@@ -11,6 +11,7 @@ import PopupState from './popover'
 
 
 
+
 const Task = (props) => {
 
     
@@ -34,7 +35,6 @@ const Task = (props) => {
         -do {date}
         </span>
 
-        {/* Przyciski i ikonki do nich */}
 
         
 
@@ -42,18 +42,19 @@ const Task = (props) => {
         onClick={() => props.change(id)} > 
         <CheckCircleIcon sx={{color: green[500],  fontSize: 25,  } }>Zadanie ukończone</CheckCircleIcon><center>Tak</center> </button>
         
-       
 
 
         <button className={"nie"} onClick={() => props.delete(id)}> 
         <DeleteIcon sx={{color: red[500], fontSize: 25}}></DeleteIcon><center>Usuń</center></button>
         
- 
+    
 
-        <button className={"jest"} onClick={() => props.edit(id)}>
+        <button className={"jest"}  onClick={() => props.edit(id)}>
         <ModeEditIcon sx={{color: brown[700], fontSize: 25}}></ModeEditIcon><center>Edytuj</center></button> 
         
+
         <PopupState/> 
+
          
          
         {/* <button onClick={() => console.log("edytuj")}>Edytuj</button> */}

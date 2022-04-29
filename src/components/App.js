@@ -5,7 +5,7 @@ import TaskList from "./TaskList";
 
 
 class App extends Component {
-  // jeśli aplikacja nie ma w sobie nic to zaczynamy od counter 0
+ 
   counter = 9
   state = {
     tasks: [
@@ -37,9 +37,12 @@ class App extends Component {
   }
   changeEditMode = (id) => {
     this.setState({
-      Editing: !this.state.editing
+      Editing: !this.state.Editing
+      
     })
   }
+
+  
 
 
 
@@ -121,10 +124,9 @@ class App extends Component {
     }
     this.counter++
     console.log(task, this.counter);
-//prevState odwołuje się do poprzedniego stanu (stanu znajdującego się w klasie)
+
     this.setState(prevState => ({
-      // tworzymy nową tablice, która składa się ze wszystkich elementów do tej pory 
-      // + z nowego taska na końcu
+
       tasks: [...prevState.tasks, task]
 
     }))
@@ -133,21 +135,24 @@ class App extends Component {
     return true
 
 }
-// przekazujemy w tym miejscu stworzone metody z góry 
+
   render(){
   return (
     <div className="App">
     
     <h1>Aplikacja zadaniowa</h1>
     
+
+    
      <AddTask add={this.addTask}/>
      <TaskList tasks={this.state.tasks} 
      delete= {this.deleteTask} 
      change = {this.changeTaskStatus} 
-     edit = {this.changeEditMode}
+     edit =  {this.changeEditMode}
      status = {this.editStatus}
      item = {this.state.item}
      handleChange={this.handleChange}
+     
       />
     </div>
   

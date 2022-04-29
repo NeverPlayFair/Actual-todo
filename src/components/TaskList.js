@@ -4,18 +4,14 @@ import Task from './Task';
 
 
     const TaskList = (props) => {
-        //wszystkie zadania które mają wartość true
+       
         const active = props.tasks.filter(task => task.active);
-        //wszystkie zadania które mają wartość false
+       
         const done = props.tasks.filter(task => !task.active);
         // console.log(active, done);
         
 
         //done.sort((a,b) =>  b.finishDate - a.finishDate)
-
-        // metoda zachowa się inaczej jak będzie 0
-        // metoda zachowa się inaczej jak będzie < 0
-        // metoda zachowa się inaczej jak będzie > 0
 
             if(done.length >= 2){
         done.sort((a,b) => {
@@ -46,7 +42,7 @@ import Task from './Task';
          task={task}
          delete={props.delete} 
          change={props.change}
-         edit = {props.changeEditMode}
+         edit = {props.edit}
          status = {props.status}
          
          
@@ -59,6 +55,7 @@ import Task from './Task';
          task={task}
          delete={props.delete} 
          change={props.change} 
+        
          
          
          />)
