@@ -1,0 +1,60 @@
+input {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+/*  Wszystkie elementy form gdzie form jest naszą klasą w pliku
+AddTaask*/
+.form {
+  font-size: 20px;
+}
+
+/* Musimy odwołać się do przycisku w klasie */
+.form button {
+  padding: 3px 10px;
+  text-transform: uppercase;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.Dropdown {
+  display: "flex";
+}
+
+:root {
+  --clear-button-icon-pad: 2px;
+  --clear-button-icon-width: 10px;
+
+  --icon-color: #fff;
+  background-color: #fff;
+}
+.MuiSvgIcon-root {
+  background-color: #fff;
+}
+.tak {
+  background-color: #fff;
+  margin-left: 10px;
+  min-width: 80px;
+  border-radius: 100%;
+  border-start-end-radius: 80%;
+}
+.nie {
+  background-color: #fff;
+  margin-left: 10px;
+  min-width: 80px;
+  border-radius: 100%;
+  border-start-end-radius: 80%;
+}
+.jest {
+  background-color: #fff;
+  margin-left: 10px;
+  min-width: 80px;
+  border-radius: 100%;
+  border-start-end-radius: 80%;
+}
+.dropdown {
+  border-style: ridge;
+}
+
+/* Stworzyć dymki */
