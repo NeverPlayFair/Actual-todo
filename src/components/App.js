@@ -6,6 +6,8 @@ import TaskList from "./TaskList";
 
 class App extends Component {
  
+ 
+ 
   counter = 9
   state = {
     tasks: [
@@ -20,6 +22,7 @@ class App extends Component {
       editing: false,
     },
 
+     // tablica z taskami
   
     // { id:1, text: "Zacząć nową aplikację", date: 
     // '2021-10-13', important: true, active: true, finishDate: null},
